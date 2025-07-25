@@ -29,7 +29,7 @@
                 <a data-aos="fade-down" data-aos-duration="2500" href="#contact">Contact</a>
 <!-- <a data-aos="fade-down" data-aos-duration="3000" href="#">LIKE</a> -->
             </nav>
-            <button data-aos="fade-down" data-aos-duration="1500" class="btn-signing"> Resume </button>
+            <button data-aos="fade-down" data-aos-duration="1500" class="btn-signing"  onclick="downloadResume()"> Resume </button>
         </header>
         <main>
             <div class="content">
@@ -39,16 +39,12 @@
                 </div>
 
                 <h1 data-aos="fade-zoom-in" data-aos-easing="ease-in-back" data-aos-delay="300" data-aos-offset="0"
-                    data-aos-duration="2000">ENAIL FOR<br> DEVELOPERS</h1>
+                    data-aos-duration="2000">HELLO! I'm <br>Vaibhav Solanke</h1>
 
                 <p data-aos="fade-zoom-in" data-aos-easing="ease-in-back" data-aos-delay="300" data-aos-offset="0"
                     data-aos-duration="2500" class="description">
-                    I’m an enthusiastic and detail-oriented front-end developer with a strong foundation in web
-                    development technologies<br>
+                    I’m an front-end developer with a strong foundation in web development technologies
                     and a love for creating clean, interactive user experiences. <br>
-                    Though I'm just starting my professional journey, I’ve worked on several personal and academic
-                    projects that showcase my skills, creativity, and eagerness to learn.
-
                     I’m excited to contribute to real-world projects and grow as a developer while delivering
                     high-quality, user-first designs.
                 </p>
@@ -79,6 +75,8 @@
                     <p>
                         I'm a passionate front-end developer eager to start my journey in web development.
                         Skilled in HTML, CSS, Bootstrap, and JavaScript, with a love for bold, futuristic design.
+                        Though I'm just starting my professional journey, I’ve worked on several personal and academic
+                        projects that showcase my skills, creativity, and eagerness to learn.
                     </p>
                 </div>
                 <div class="about-image" data-aos="fade-left">
@@ -93,24 +91,25 @@
                 <div class="card" id="card1" style="--color:#ef476f;">
                     <i class="fa-solid fa-code"></i>
                     <div class="title">Web Development</div>
-                    <div class="description">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Sapiente modi
-                        nulla vitae esse. Molestias omnis reiciendis autem nihil quibusdam voluptate!</div>
+                    <div class="description"> Passionate about building responsive websites using HTML, CSS, JavaScript and Bootstrap. 
+                        Eager to apply modern development practices and continuously improve through hands-on experience.
+                    </div>
                 </div>
 
                 <div class="card" id="card2" style="--color:#ffd23f;">
                     <i class="fa-solid fa-robot"></i>
-                    <div class="title">Artificial Intelligence</div>
-                    <div class="description">Lorem ipsum dolor, sit amet consectetur adipisicing elit.
-                        Impedit facere harum recusandae minima dolor iusto nisi doloremque inventore
-                        architecto id.</div>
+                    <div class="title">Artificial Intelligence <br> & <br>MySQL / DBMS</div>
+                    <div class="description"> Enthusiastic about exploring AI basics. 
+                        Interested in learning how front-end interfaces can interact with intelligent systems.
+                    Learning the basics of databases, including SQL queries, table design, and relational models. 
+                    Comfortable with MySQL for storing and managing structured data in web projects.</div>
                 </div>
 
                 <div class="card" id="card3" style="--color:#00a6ed;">
                     <i class="fa-brands fa-figma"></i>
                     <div class="title">Web Design</div>
-                    <div class="description">Lorem ipsum dolor sit, amet consectetur adipisicing elit.
-                        Iste, odit eligendi corrupti possimus laudantium error molestias cupiditate
-                        facilis commodi voluptatum.</div>
+                    <div class="description">Strong interest in UI/UX design principles. 
+                        Familiar with tools like Figma and focused on creating user-friendly, clean, and visually appealing interfaces.</div>
                 </div>
             </div>
 
@@ -191,6 +190,15 @@
     </button>
 
     <script>
+
+         function downloadResume() {
+      const link = document.createElement('a');
+      link.href = 'Vaibhav Solanke - Intern Frontend Developer (2).pdf'; // path to your file
+      link.download = 'My_Resume.pdf'; // suggested download filename
+      document.body.appendChild(link);
+      link.click();
+      document.body.removeChild(link);
+    }
         // like button script ----------------------------------------------------->
         const button = document.querySelector('#like');
         const counter = '#couter';
